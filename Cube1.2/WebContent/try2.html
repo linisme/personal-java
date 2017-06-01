@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+	window.onload = function(){
+		document.getElementById("one").onclick=callAjax;
+	}
+	function getXMLHttpRequest(){
+		try{
+			try{
+				return new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			catch(e){
+				return new ActiveXObject("Msxml2.XMLHTTP");
+			}
+		}
+		catch(e){
+			return new XMLHttpRequest();
+		}
+	}
+	var myRequest = getXMLHttpRequest();
+	function callAjax(){
+		var url = "/Cube1.2/abc";
+		
+		myRequest.open("POST",url,true);
+		myRequest.onreadystatechange = responseAjax;
+		myRequest.send(null);
+	}
+	function responseAjax(){
+		if(myRequest.readyState == 4){
+			if(myRequest.status == 200){
+				var now = new Date();
+				var localTime = now.getHours()+":"+now.getMinutes()+":"+now.getSeconds();
+				var serverTime = myRequest.responseText;
+				var my = JSON.parse(serverTime);
+				var out = "";
+				for(i in my){
+					out+=i+"---"+my[i]+"<br>";
+				}
+				document.getElementById("clock").innerHTML =out;
+			
+				
+			}else{
+				
+				alert("An error has occurred:"+myRequest.statusText);
+			}
+		}
+	}
+</script>
+<style>
+	#clock{
+		font:20px normal verdana,helvetica,sans-serif;
+	}
+	#btn1{		
+		font:20px normal;
+	}
+</style>
+<meta charset="UTF-8">
+<title>this is try</title>
+</head>
+<body>
+	<div id="btn1">排行榜</div>
+	<div id="clock"></div>
+	<input id="one" type="button" name="button" value="button"/>
+</body>
+</html>

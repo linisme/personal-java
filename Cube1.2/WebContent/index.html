@@ -1,0 +1,2224 @@
+<!DOCTYPE html>
+<html>
+<head>		
+	<script type="text/javascript">	
+		var start = 0;
+		function time(){
+			setInterval("addtime()",1000);
+			document.getElementById("bottontime").style.display='none';
+			
+		}	
+		function going(){
+			shangleft();
+			shangleft;			
+			xialeft;
+			frontanticlockwise;
+			xiaright;
+			shangright;			
+			backclockwise;
+			xiaright;
+			backtanticlockwise;
+			xialeft;
+			leftshang;
+			rightxia;
+			xialeft;
+			frontclockwise;
+		}
+		function addtime(){
+			start = start+1;
+			var h = Math.floor(start/3600);
+			var m = Math.floor((start%3600)/60);
+			var s = ((start%3600)%60);
+			document.getElementById("time").innerHTML=h+":"+m+":"+s;
+		}
+	
+		function showdiv() {    			
+	        document.getElementById("bg").style.display ="block";  
+	        document.getElementById("show").style.display ="block";  
+	    }  
+		function hidediv() {  
+	        document.getElementById("bg").style.display ='none';  
+	        document.getElementById("show").style.display ='none';  
+	    } 
+		function showregister (){
+			document.getElementById("bg").style.display ="block";  
+	        document.getElementById("register").style.display ="block";
+			
+		}
+		function hidelogin(){
+			document.getElementById("bg").style.display ='none';  
+	        document.getElementById("register").style.display ='none'; 
+		}		
+		function shangleft(){			
+			var yellow1=document.getElementById("yellow1");
+			var yellow2=document.getElementById("yellow2");
+			var blue1=document.getElementById("blue1");
+			var blue2=document.getElementById("blue2");
+			var orange1=document.getElementById("orange1");
+			var orange3=document.getElementById("orange3");
+			var green1=document.getElementById("green1");
+			var green3=document.getElementById("green3");
+			var red1=document.getElementById("red1");
+			var red3=document.getElementById("red3");
+			var red4=document.getElementById("red4");
+			var red2=document.getElementById("red2");
+			var yellow1color = window.getComputedStyle(yellow1,null).getPropertyValue("background-color");
+			var yellow2color = window.getComputedStyle(yellow2,null).getPropertyValue("background-color");
+			var blue1color = window.getComputedStyle(blue1,null).getPropertyValue("background-color");
+			var blue2color = window.getComputedStyle(blue2,null).getPropertyValue("background-color");
+			var orange1color = window.getComputedStyle(orange1,null).getPropertyValue("background-color");
+			var orange3color = window.getComputedStyle(orange3,null).getPropertyValue("background-color");
+			var green1color = window.getComputedStyle(green1,null).getPropertyValue("background-color");
+			var green3color = window.getComputedStyle(green3,null).getPropertyValue("background-color");
+			var red1color = window.getComputedStyle(red1,null).getPropertyValue("background-color");
+			var red3color = window.getComputedStyle(red3,null).getPropertyValue("background-color");
+			var red4color = window.getComputedStyle(red4,null).getPropertyValue("background-color");
+			var red2color = window.getComputedStyle(red2,null).getPropertyValue("background-color");
+			
+			var aaa = yellow1color;
+			var bbb = yellow2color;
+			yellow1.style.backgroundColor = blue1color;
+			yellow2.style.backgroundColor = blue2color;
+			blue1.style.backgroundColor = orange1color;
+			blue2.style.backgroundColor = orange3color;
+			orange1.style.backgroundColor = green1color;
+			orange3.style.backgroundColor = green3color;
+			green1.style.backgroundColor = aaa;
+			green3.style.backgroundColor = bbb;
+			var ccc = red1color;
+			red1.style.backgroundColor = red2color;
+			red2.style.backgroundColor = red4color;
+			red4.style.backgroundColor = red3color;
+			red3.style.backgroundColor = ccc;
+		}
+		function shangright(){
+			var yellow1=document.getElementById("yellow1");
+			var yellow2=document.getElementById("yellow2");
+			var blue1=document.getElementById("blue1");
+			var blue2=document.getElementById("blue2");
+			var orange1=document.getElementById("orange1");
+			var orange3=document.getElementById("orange3");
+			var green1=document.getElementById("green1");
+			var green3=document.getElementById("green3");
+			var red1=document.getElementById("red1");
+			var red3=document.getElementById("red3");
+			var red4=document.getElementById("red4");
+			var red2=document.getElementById("red2");
+			var yellow1color = window.getComputedStyle(yellow1,null).getPropertyValue("background-color");
+			var yellow2color = window.getComputedStyle(yellow2,null).getPropertyValue("background-color");
+			var blue1color = window.getComputedStyle(blue1,null).getPropertyValue("background-color");
+			var blue2color = window.getComputedStyle(blue2,null).getPropertyValue("background-color");
+			var orange1color = window.getComputedStyle(orange1,null).getPropertyValue("background-color");
+			var orange3color = window.getComputedStyle(orange3,null).getPropertyValue("background-color");
+			var green1color = window.getComputedStyle(green1,null).getPropertyValue("background-color");
+			var green3color = window.getComputedStyle(green3,null).getPropertyValue("background-color");
+			var red1color = window.getComputedStyle(red1,null).getPropertyValue("background-color");
+			var red3color = window.getComputedStyle(red3,null).getPropertyValue("background-color");
+			var red4color = window.getComputedStyle(red4,null).getPropertyValue("background-color");
+			var red2color = window.getComputedStyle(red2,null).getPropertyValue("background-color");
+			
+			var aaa = yellow1color;
+			var bbb = yellow2color;
+			yellow1.style.backgroundColor = green1color;
+			yellow2.style.backgroundColor = green3color;
+			green1.style.backgroundColor = orange1color;
+			green3.style.backgroundColor = orange3color;
+			orange1.style.backgroundColor = blue1color;
+			orange3.style.backgroundColor = blue2color;
+			blue1.style.backgroundColor = aaa;
+			blue2.style.backgroundColor = bbb;
+			
+			
+			var ccc = red1color;
+			red1.style.backgroundColor = red3color;
+			red3.style.backgroundColor = red4color;
+			red4.style.backgroundColor = red2color;
+			red2.style.backgroundColor = ccc;
+			
+			
+		}
+		function xialeft(){
+			var yellow3=document.getElementById("yellow3");
+			var yellow4=document.getElementById("yellow4");
+			var blue3=document.getElementById("blue3");
+			var blue4=document.getElementById("blue4");
+			var orange2=document.getElementById("orange2");
+			var orange4=document.getElementById("orange4");
+			var green2=document.getElementById("green2");
+			var green4=document.getElementById("green4");
+			var gray1=document.getElementById("gray1");
+			var gray2=document.getElementById("gray2");
+			var gray3=document.getElementById("gray3");
+			var gray4=document.getElementById("gray4");
+			var yellow3color = window.getComputedStyle(yellow3,null).getPropertyValue("background-color");
+			var yellow4color = window.getComputedStyle(yellow4,null).getPropertyValue("background-color");
+			var blue3color = window.getComputedStyle(blue3,null).getPropertyValue("background-color");
+			var blue4color = window.getComputedStyle(blue4,null).getPropertyValue("background-color");
+			var orange2color = window.getComputedStyle(orange2,null).getPropertyValue("background-color");
+			var orange4color = window.getComputedStyle(orange4,null).getPropertyValue("background-color");
+			var green2color = window.getComputedStyle(green2,null).getPropertyValue("background-color");
+			var green4color = window.getComputedStyle(green4,null).getPropertyValue("background-color");
+			var gray1color = window.getComputedStyle(gray1,null).getPropertyValue("background-color");
+			var gray2color = window.getComputedStyle(gray2,null).getPropertyValue("background-color");
+			var gray3color = window.getComputedStyle(gray3,null).getPropertyValue("background-color");
+			var gray4color = window.getComputedStyle(gray4,null).getPropertyValue("background-color");
+			
+			var aaa = yellow3color;
+			var bbb = yellow4color;
+			yellow3.style.backgroundColor = blue3color;
+			yellow4.style.backgroundColor = blue4color;
+			blue3.style.backgroundColor = orange2color;
+			blue4.style.backgroundColor = orange4color;
+			orange2.style.backgroundColor = green2color;
+			orange4.style.backgroundColor = green4color;
+			green2.style.backgroundColor = aaa;
+			green4.style.backgroundColor = bbb;
+			var ccc = gray1color;
+			gray1.style.backgroundColor = gray3color;
+			gray3.style.backgroundColor = gray4color;
+			gray4.style.backgroundColor = gray2color;
+			gray2.style.backgroundColor = ccc;
+		}
+		function xiaright(){
+			var yellow3=document.getElementById("yellow3");
+			var yellow4=document.getElementById("yellow4");
+			var blue3=document.getElementById("blue3");
+			var blue4=document.getElementById("blue4");
+			var orange2=document.getElementById("orange2");
+			var orange4=document.getElementById("orange4");
+			var green2=document.getElementById("green2");
+			var green4=document.getElementById("green4");
+			var gray1=document.getElementById("gray1");
+			var gray2=document.getElementById("gray2");
+			var gray3=document.getElementById("gray3");
+			var gray4=document.getElementById("gray4");
+			var yellow3color = window.getComputedStyle(yellow3,null).getPropertyValue("background-color");
+			var yellow4color = window.getComputedStyle(yellow4,null).getPropertyValue("background-color");
+			var blue3color = window.getComputedStyle(blue3,null).getPropertyValue("background-color");
+			var blue4color = window.getComputedStyle(blue4,null).getPropertyValue("background-color");
+			var orange2color = window.getComputedStyle(orange2,null).getPropertyValue("background-color");
+			var orange4color = window.getComputedStyle(orange4,null).getPropertyValue("background-color");
+			var green2color = window.getComputedStyle(green2,null).getPropertyValue("background-color");
+			var green4color = window.getComputedStyle(green4,null).getPropertyValue("background-color");
+			var gray1color = window.getComputedStyle(gray1,null).getPropertyValue("background-color");
+			var gray2color = window.getComputedStyle(gray2,null).getPropertyValue("background-color");
+			var gray3color = window.getComputedStyle(gray3,null).getPropertyValue("background-color");
+			var gray4color = window.getComputedStyle(gray4,null).getPropertyValue("background-color");
+			
+			var aaa = yellow3color;
+			var bbb = yellow4color;
+			yellow3.style.backgroundColor = green2color;
+			yellow4.style.backgroundColor = green4color;
+			green2.style.backgroundColor = orange2color;
+			green4.style.backgroundColor = orange4color;
+			orange2.style.backgroundColor = blue3color;
+			orange4.style.backgroundColor = blue4color;
+			blue3.style.backgroundColor = aaa;
+			blue4.style.backgroundColor = bbb;
+			
+			
+			var ccc = gray1color;
+			gray1.style.backgroundColor = gray2color;
+			gray2.style.backgroundColor = gray4color;
+			gray4.style.backgroundColor = gray3color;
+			gray3.style.backgroundColor = ccc;
+			
+			
+		}
+		function leftshang(){
+			var red1=document.getElementById("red1");
+			var red2=document.getElementById("red2");
+			var blue1=document.getElementById("blue1");
+			var blue3=document.getElementById("blue3");
+			var gray1=document.getElementById("gray1");
+			var gray2=document.getElementById("gray2");
+			var green4=document.getElementById("green4");
+			var green3=document.getElementById("green3");
+			var yellow1=document.getElementById("yellow1");
+			var yellow2=document.getElementById("yellow2");
+			var yellow4=document.getElementById("yellow4");
+			var yellow3=document.getElementById("yellow3");
+			var red1color = window.getComputedStyle(red1,null).getPropertyValue("background-color");
+			var red2color = window.getComputedStyle(red2,null).getPropertyValue("background-color");
+			var blue1color = window.getComputedStyle(blue1,null).getPropertyValue("background-color");
+			var blue3color = window.getComputedStyle(blue3,null).getPropertyValue("background-color");
+			var gray1color = window.getComputedStyle(gray1,null).getPropertyValue("background-color");
+			var gray2color = window.getComputedStyle(gray2,null).getPropertyValue("background-color");
+			var green4color = window.getComputedStyle(green4,null).getPropertyValue("background-color");
+			var green3color = window.getComputedStyle(green3,null).getPropertyValue("background-color");
+			var yellow1color = window.getComputedStyle(yellow1,null).getPropertyValue("background-color");
+			var yellow2color = window.getComputedStyle(yellow2,null).getPropertyValue("background-color");
+			var yellow4color = window.getComputedStyle(yellow4,null).getPropertyValue("background-color");
+			var yellow3color = window.getComputedStyle(yellow3,null).getPropertyValue("background-color");
+			
+			var aaa = red1color;
+			var bbb = red2color;
+			red1.style.backgroundColor = blue1color;
+			red2.style.backgroundColor = blue3color;
+			blue1.style.backgroundColor = gray1color;
+			blue3.style.backgroundColor = gray2color;
+			gray1.style.backgroundColor = green4color;
+			gray2.style.backgroundColor = green3color;
+			green4.style.backgroundColor = aaa;
+			green3.style.backgroundColor = bbb;
+			
+			
+			var ccc = yellow1color;
+			yellow1.style.backgroundColor = yellow2color;
+			yellow2.style.backgroundColor = yellow4color;
+			yellow4.style.backgroundColor = yellow3color;
+			yellow3.style.backgroundColor = ccc;
+		}
+		function leftxia(){
+			var red1=document.getElementById("red1");
+			var red2=document.getElementById("red2");
+			var blue1=document.getElementById("blue1");
+			var blue3=document.getElementById("blue3");
+			var gray1=document.getElementById("gray1");
+			var gray2=document.getElementById("gray2");
+			var green4=document.getElementById("green4");
+			var green3=document.getElementById("green3");
+			var yellow1=document.getElementById("yellow1");
+			var yellow2=document.getElementById("yellow2");
+			var yellow4=document.getElementById("yellow4");
+			var yellow3=document.getElementById("yellow3");
+			var red1color = window.getComputedStyle(red1,null).getPropertyValue("background-color");
+			var red2color = window.getComputedStyle(red2,null).getPropertyValue("background-color");
+			var blue1color = window.getComputedStyle(blue1,null).getPropertyValue("background-color");
+			var blue3color = window.getComputedStyle(blue3,null).getPropertyValue("background-color");
+			var gray1color = window.getComputedStyle(gray1,null).getPropertyValue("background-color");
+			var gray2color = window.getComputedStyle(gray2,null).getPropertyValue("background-color");
+			var green4color = window.getComputedStyle(green4,null).getPropertyValue("background-color");
+			var green3color = window.getComputedStyle(green3,null).getPropertyValue("background-color");
+			var yellow1color = window.getComputedStyle(yellow1,null).getPropertyValue("background-color");
+			var yellow2color = window.getComputedStyle(yellow2,null).getPropertyValue("background-color");
+			var yellow4color = window.getComputedStyle(yellow4,null).getPropertyValue("background-color");
+			var yellow3color = window.getComputedStyle(yellow3,null).getPropertyValue("background-color");
+			
+			var aaa = red1color;
+			var bbb = red2color;
+			red1.style.backgroundColor = green4color;
+			red2.style.backgroundColor = green3color;
+			green4.style.backgroundColor = gray1color;
+			green3.style.backgroundColor = gray2color;
+			gray1.style.backgroundColor = blue1color;
+			gray2.style.backgroundColor = blue3color;
+			blue1.style.backgroundColor = aaa;
+			blue3.style.backgroundColor = bbb;
+			
+			
+			var ccc = yellow1color;
+			yellow1.style.backgroundColor = yellow3color;
+			yellow3.style.backgroundColor = yellow4color;
+			yellow4.style.backgroundColor = yellow2color;
+			yellow2.style.backgroundColor = ccc;
+		}
+		function rightshang(){
+			var red3=document.getElementById("red3");
+			var red4=document.getElementById("red4");
+			var blue2=document.getElementById("blue2");
+			var blue4=document.getElementById("blue4");
+			var gray3=document.getElementById("gray3");
+			var gray4=document.getElementById("gray4");
+			var green2=document.getElementById("green2");
+			var green1=document.getElementById("green1");
+			var orange1=document.getElementById("orange1");
+			var orange2=document.getElementById("orange2");
+			var orange4=document.getElementById("orange4");
+			var orange3=document.getElementById("orange3");
+			var red3color = window.getComputedStyle(red3,null).getPropertyValue("background-color");
+			var red4color = window.getComputedStyle(red4,null).getPropertyValue("background-color");
+			var blue2color = window.getComputedStyle(blue2,null).getPropertyValue("background-color");
+			var blue4color = window.getComputedStyle(blue4,null).getPropertyValue("background-color");
+			var gray3color = window.getComputedStyle(gray3,null).getPropertyValue("background-color");
+			var gray4color = window.getComputedStyle(gray4,null).getPropertyValue("background-color");
+			var green2color = window.getComputedStyle(green2,null).getPropertyValue("background-color");
+			var green1color = window.getComputedStyle(green1,null).getPropertyValue("background-color");
+			var orange1color = window.getComputedStyle(orange1,null).getPropertyValue("background-color");
+			var orange2color = window.getComputedStyle(orange2,null).getPropertyValue("background-color");
+			var orange3color = window.getComputedStyle(orange3,null).getPropertyValue("background-color");
+			var orange4color = window.getComputedStyle(orange4,null).getPropertyValue("background-color");
+			
+			var aaa = red3color;
+			var bbb = red4color;
+			red3.style.backgroundColor = blue2color;
+			red4.style.backgroundColor = blue4color;
+			blue2.style.backgroundColor = gray3color;
+			blue4.style.backgroundColor = gray4color;
+			gray3.style.backgroundColor = green2color;
+			gray4.style.backgroundColor = green1color;
+			green2.style.backgroundColor = aaa;
+			green1.style.backgroundColor = bbb;			
+			
+			var ccc = orange1color;
+			orange1.style.backgroundColor = orange2color;
+			orange2.style.backgroundColor = orange4color;
+			orange4.style.backgroundColor = orange3color;
+			orange3.style.backgroundColor = ccc;
+		}
+		function rightxia(){
+			var red3=document.getElementById("red3");
+			var red4=document.getElementById("red4");
+			var blue2=document.getElementById("blue2");
+			var blue4=document.getElementById("blue4");
+			var gray3=document.getElementById("gray3");
+			var gray4=document.getElementById("gray4");
+			var green2=document.getElementById("green2");
+			var green1=document.getElementById("green1");
+			var orange1=document.getElementById("orange1");
+			var orange2=document.getElementById("orange2");
+			var orange4=document.getElementById("orange4");
+			var orange3=document.getElementById("orange3");
+			var red3color = window.getComputedStyle(red3,null).getPropertyValue("background-color");
+			var red4color = window.getComputedStyle(red4,null).getPropertyValue("background-color");
+			var blue2color = window.getComputedStyle(blue2,null).getPropertyValue("background-color");
+			var blue4color = window.getComputedStyle(blue4,null).getPropertyValue("background-color");
+			var gray3color = window.getComputedStyle(gray3,null).getPropertyValue("background-color");
+			var gray4color = window.getComputedStyle(gray4,null).getPropertyValue("background-color");
+			var green2color = window.getComputedStyle(green2,null).getPropertyValue("background-color");
+			var green1color = window.getComputedStyle(green1,null).getPropertyValue("background-color");
+			var orange1color = window.getComputedStyle(orange1,null).getPropertyValue("background-color");
+			var orange2color = window.getComputedStyle(orange2,null).getPropertyValue("background-color");
+			var orange3color = window.getComputedStyle(orange3,null).getPropertyValue("background-color");
+			var orange4color = window.getComputedStyle(orange4,null).getPropertyValue("background-color");
+			
+			var aaa = red3color;
+			var bbb = red4color;
+			red3.style.backgroundColor = green2color;
+			red4.style.backgroundColor = green1color;
+			green2.style.backgroundColor = gray3color;
+			green1.style.backgroundColor = gray4color;
+			gray3.style.backgroundColor = blue2color;
+			gray4.style.backgroundColor = blue4color;
+			blue2.style.backgroundColor = aaa;
+			blue4.style.backgroundColor = bbb;			
+			
+			var ccc = orange1color;
+			orange1.style.backgroundColor = orange3color;
+			orange3.style.backgroundColor = orange4color;
+			orange4.style.backgroundColor = orange2color;
+			orange2.style.backgroundColor = ccc;
+		}
+		function frontclockwise(){
+			var red4=document.getElementById("red4");
+			var red2=document.getElementById("red2");
+			var yellow2=document.getElementById("yellow2");
+			var yellow4=document.getElementById("yellow4");
+			var gray1=document.getElementById("gray1");
+			var gray3=document.getElementById("gray3");
+			var orange2=document.getElementById("orange2");
+			var orange1=document.getElementById("orange1");
+			var blue1=document.getElementById("blue1");
+			var blue2=document.getElementById("blue2");
+			var blue3=document.getElementById("blue3");
+			var blue4=document.getElementById("blue4");
+			var red4color = window.getComputedStyle(red4,null).getPropertyValue("background-color");
+			var red2color = window.getComputedStyle(red2,null).getPropertyValue("background-color");
+			var yellow2color = window.getComputedStyle(yellow2,null).getPropertyValue("background-color");
+			var yellow4color = window.getComputedStyle(yellow4,null).getPropertyValue("background-color");
+			var gray1color = window.getComputedStyle(gray1,null).getPropertyValue("background-color");
+			var gray3color = window.getComputedStyle(gray3,null).getPropertyValue("background-color");
+			var orange2color = window.getComputedStyle(orange2,null).getPropertyValue("background-color");
+			var orange1color = window.getComputedStyle(orange1,null).getPropertyValue("background-color");
+			var blue1color = window.getComputedStyle(blue1,null).getPropertyValue("background-color");
+			var blue2color = window.getComputedStyle(blue2,null).getPropertyValue("background-color");
+			var blue3color = window.getComputedStyle(blue3,null).getPropertyValue("background-color");
+			var blue4color = window.getComputedStyle(blue4,null).getPropertyValue("background-color");
+			
+			var aaa = red4color;
+			var bbb = red2color;
+			red4.style.backgroundColor = yellow2color;
+			red2.style.backgroundColor = yellow4color;
+			yellow2.style.backgroundColor = gray1color;
+			yellow4.style.backgroundColor = gray3color;
+			gray1.style.backgroundColor = orange2color;
+			gray3.style.backgroundColor = orange1color;
+			orange2.style.backgroundColor = aaa;
+			orange1.style.backgroundColor = bbb;			
+			
+			var ccc = blue1color;
+			blue1.style.backgroundColor = blue3color;
+			blue3.style.backgroundColor = blue4color;
+			blue4.style.backgroundColor = blue2color;
+			blue2.style.backgroundColor = ccc; 
+		}
+		function frontanticlockwise(){
+			var red4=document.getElementById("red4");
+			var red2=document.getElementById("red2");
+			var yellow2=document.getElementById("yellow2");
+			var yellow4=document.getElementById("yellow4");
+			var gray1=document.getElementById("gray1");
+			var gray3=document.getElementById("gray3");
+			var orange2=document.getElementById("orange2");
+			var orange1=document.getElementById("orange1");
+			var blue1=document.getElementById("blue1");
+			var blue2=document.getElementById("blue2");
+			var blue3=document.getElementById("blue3");
+			var blue4=document.getElementById("blue4");
+			var red4color = window.getComputedStyle(red4,null).getPropertyValue("background-color");
+			var red2color = window.getComputedStyle(red2,null).getPropertyValue("background-color");
+			var yellow2color = window.getComputedStyle(yellow2,null).getPropertyValue("background-color");
+			var yellow4color = window.getComputedStyle(yellow4,null).getPropertyValue("background-color");
+			var gray1color = window.getComputedStyle(gray1,null).getPropertyValue("background-color");
+			var gray3color = window.getComputedStyle(gray3,null).getPropertyValue("background-color");
+			var orange2color = window.getComputedStyle(orange2,null).getPropertyValue("background-color");
+			var orange1color = window.getComputedStyle(orange1,null).getPropertyValue("background-color");
+			var blue1color = window.getComputedStyle(blue1,null).getPropertyValue("background-color");
+			var blue2color = window.getComputedStyle(blue2,null).getPropertyValue("background-color");
+			var blue3color = window.getComputedStyle(blue3,null).getPropertyValue("background-color");
+			var blue4color = window.getComputedStyle(blue4,null).getPropertyValue("background-color");
+			
+			var aaa = red4color;
+			var bbb = red2color;
+			red4.style.backgroundColor = orange2color;
+			red2.style.backgroundColor = orange1color;
+			orange2.style.backgroundColor = gray1color;
+			orange1.style.backgroundColor = gray3color;
+			gray1.style.backgroundColor = yellow2color;
+			gray3.style.backgroundColor = yellow4color;
+			yellow2.style.backgroundColor = aaa;
+			yellow4.style.backgroundColor = bbb;			
+			
+			var ccc = blue1color;
+			blue1.style.backgroundColor = blue2color;
+			blue2.style.backgroundColor = blue4color;
+			blue4.style.backgroundColor = blue3color;
+			blue3.style.backgroundColor = ccc; 
+		}
+		function backclockwise(){
+			var red3=document.getElementById("red3");
+			var red1=document.getElementById("red1");
+			var yellow1=document.getElementById("yellow1");
+			var yellow3=document.getElementById("yellow3");
+			var gray2=document.getElementById("gray2");
+			var gray4=document.getElementById("gray4");
+			var orange4=document.getElementById("orange4");
+			var orange3=document.getElementById("orange3");
+			var green1=document.getElementById("green1");
+			var green2=document.getElementById("green2");
+			var green3=document.getElementById("green3");
+			var green4=document.getElementById("green4");
+			var red3color = window.getComputedStyle(red3,null).getPropertyValue("background-color");
+			var red1color = window.getComputedStyle(red1,null).getPropertyValue("background-color");
+			var yellow1color = window.getComputedStyle(yellow1,null).getPropertyValue("background-color");
+			var yellow3color = window.getComputedStyle(yellow3,null).getPropertyValue("background-color");
+			var gray2color = window.getComputedStyle(gray2,null).getPropertyValue("background-color");
+			var gray4color = window.getComputedStyle(gray4,null).getPropertyValue("background-color");
+			var orange4color = window.getComputedStyle(orange4,null).getPropertyValue("background-color");
+			var orange3color = window.getComputedStyle(orange3,null).getPropertyValue("background-color");
+			var green1color = window.getComputedStyle(green1,null).getPropertyValue("background-color");
+			var green2color = window.getComputedStyle(green2,null).getPropertyValue("background-color");
+			var green3color = window.getComputedStyle(green3,null).getPropertyValue("background-color");
+			var green4color = window.getComputedStyle(green4,null).getPropertyValue("background-color");
+			
+			var aaa = red3color;
+			var bbb = red1color;
+			red3.style.backgroundColor = yellow1color;
+			red1.style.backgroundColor = yellow3color;
+			yellow1.style.backgroundColor = gray2color;
+			yellow3.style.backgroundColor = gray4color;
+			gray2.style.backgroundColor = orange4color;
+			gray4.style.backgroundColor = orange3color;
+			orange4.style.backgroundColor = aaa;
+			orange3.style.backgroundColor = bbb;			
+			
+			var ccc = green1color;
+			green1.style.backgroundColor = green3color;
+			green3.style.backgroundColor = green4color;
+			green4.style.backgroundColor = green2color;
+			green2.style.backgroundColor = ccc; 
+		}
+		function backtanticlockwise(){
+			var red3=document.getElementById("red3");
+			var red1=document.getElementById("red1");
+			var yellow1=document.getElementById("yellow1");
+			var yellow3=document.getElementById("yellow3");
+			var gray2=document.getElementById("gray2");
+			var gray4=document.getElementById("gray4");
+			var orange4=document.getElementById("orange4");
+			var orange3=document.getElementById("orange3");
+			var green1=document.getElementById("green1");
+			var green2=document.getElementById("green2");
+			var green3=document.getElementById("green3");
+			var green4=document.getElementById("green4");
+			var red3color = window.getComputedStyle(red3,null).getPropertyValue("background-color");
+			var red1color = window.getComputedStyle(red1,null).getPropertyValue("background-color");
+			var yellow1color = window.getComputedStyle(yellow1,null).getPropertyValue("background-color");
+			var yellow3color = window.getComputedStyle(yellow3,null).getPropertyValue("background-color");
+			var gray2color = window.getComputedStyle(gray2,null).getPropertyValue("background-color");
+			var gray4color = window.getComputedStyle(gray4,null).getPropertyValue("background-color");
+			var orange4color = window.getComputedStyle(orange4,null).getPropertyValue("background-color");
+			var orange3color = window.getComputedStyle(orange3,null).getPropertyValue("background-color");
+			var green1color = window.getComputedStyle(green1,null).getPropertyValue("background-color");
+			var green2color = window.getComputedStyle(green2,null).getPropertyValue("background-color");
+			var green3color = window.getComputedStyle(green3,null).getPropertyValue("background-color");
+			var green4color = window.getComputedStyle(green4,null).getPropertyValue("background-color");
+			
+			var aaa = red3color;
+			var bbb = red1color;
+			red3.style.backgroundColor = orange4color;
+			red1.style.backgroundColor = orange3color;
+			orange4.style.backgroundColor = gray2color;
+			orange3.style.backgroundColor = gray4color;
+			gray2.style.backgroundColor = yellow1color;
+			gray4.style.backgroundColor = yellow3color;
+			yellow1.style.backgroundColor = aaa;
+			yellow3.style.backgroundColor = bbb;			
+			
+			var ccc = green1color;
+			green1.style.backgroundColor = green2color;
+			green2.style.backgroundColor = green4color;
+			green4.style.backgroundColor = green3color;
+			green3.style.backgroundColor = ccc; 
+		}
+		function show(){
+			var yellow1manager=document.getElementById("yellow1manager");
+			var yellow2manager=document.getElementById("yellow2manager");
+			var yellow3manager=document.getElementById("yellow3manager");
+			var yellow4manager=document.getElementById("yellow4manager");
+			var blue1manager=document.getElementById("blue1manager");
+			var blue2manager=document.getElementById("blue2manager");
+			var blue3manager=document.getElementById("blue3manager");
+			var blue4manager=document.getElementById("blue4manager");
+			var orange1manager=document.getElementById("orange1manager");
+			var orange2manager=document.getElementById("orange2manager");
+			var orange3manager=document.getElementById("orange3manager");
+			var orange4manager=document.getElementById("orange4manager");
+			var red1manager=document.getElementById("red1manager");
+			var red2manager=document.getElementById("red2manager");
+			var red3manager=document.getElementById("red3manager");
+			var red4manager=document.getElementById("red4manager");
+			var gray1manager=document.getElementById("gray1manager");
+			var gray2manager=document.getElementById("gray2manager");
+			var gray3manager=document.getElementById("gray3manager");
+			var gray4manager=document.getElementById("gray4manager");
+			var green1manager=document.getElementById("green1manager");
+			var green2manager=document.getElementById("green2manager");
+			var green3manager=document.getElementById("green3manager");
+			var green4manager=document.getElementById("green4manager");
+			
+			yellow1manager.style.display='none';
+			yellow2manager.style.display='none';
+			yellow3manager.style.display='none';
+			yellow4manager.style.display='none';
+			blue1manager.style.display='none';
+			blue2manager.style.display='none';
+			blue3manager.style.display='none';
+			blue4manager.style.display='none';
+			orange1manager.style.display='none';
+			orange2manager.style.display='none';
+			orange3manager.style.display='none';
+			orange4manager.style.display='none';
+			red1manager.style.display='none';
+			red2manager.style.display='none';
+			red3manager.style.display='none';
+			red4manager.style.display='none';
+			gray1manager.style.display='none';
+			gray2manager.style.display='none';
+			gray3manager.style.display='none';
+			gray4manager.style.display='none';
+			green1manager.style.display='none';
+			green2manager.style.display='none';
+			green3manager.style.display='none';
+			green4manager.style.display='none';
+			
+			switch(this.id){
+				case "yellow1":					
+					yellow1manager.style.display='block';
+				break;
+				case "yellow2":					
+					yellow2manager.style.display='block';	
+				break;
+				case "yellow3":					
+					yellow3manager.style.display='block';
+				break;
+				case "yellow4":					
+					yellow4manager.style.display='block';
+				break;
+				case "blue1":					
+					blue1manager.style.display='block';
+				break;
+				case "blue2":					
+					blue2manager.style.display='block';
+				break;
+				case "blue3":					
+					blue3manager.style.display='block';
+				break;
+				case "blue4":					
+					blue4manager.style.display='block';
+				break;
+				case "orange1":					
+					orange1manager.style.display='block';
+				break;
+				case "orange2":					
+					orange2manager.style.display='block';
+				break;
+				case "orange3":					
+					orange3manager.style.display='block';
+				break;
+				case "orange4":					
+					orange4manager.style.display='block';
+				break;
+				case "green1":					
+					green1manager.style.display='block';
+				break;
+				case "green2":					
+					green2manager.style.display='block';
+				break;
+				case "green3":					
+					green3manager.style.display='block';
+				break;
+				case "green4":					
+					green4manager.style.display='block';
+				break;
+				case "red1":					
+					red1manager.style.display='block';
+				break;
+				case "red2":					
+					red2manager.style.display='block';
+				break;
+				case "red3":					
+					red3manager.style.display='block';
+				break;
+				case "red4":					
+					red4manager.style.display='block';
+				break;
+				case "gray1":					
+					gray1manager.style.display='block';
+				break;
+				case "gray2":					
+					gray2manager.style.display='block';
+				break;
+				case "gray3":					
+					gray3manager.style.display='block';
+				break;
+				case "gray4":					
+					gray4manager.style.display='block';
+				break;
+			}
+		}
+		
+		function out(){
+			var myElement=document.getElementById("g");
+			myElement.innerHTML=""
+		}
+		window.onload=function(){
+			document.getElementById("c").onclick=shangleft;
+			document.getElementById("ll").onclick=shangright;
+			document.getElementById("ttt").onclick=xialeft;
+			document.getElementById("kkkk").onclick=xiaright;
+			document.getElementById("bb").onclick=leftshang;
+			document.getElementById("fff").onclick=leftxia;
+			document.getElementById("hhh").onclick=rightshang;
+			document.getElementById("mm").onclick=rightxia;
+			document.getElementById("aa").onclick=frontclockwise;
+			document.getElementById("dd").onclick=frontanticlockwise;
+			document.getElementById("jj").onclick=backclockwise;
+			document.getElementById("ii").onclick=backtanticlockwise;
+			
+			document.getElementById("bottontime").onclick=time;	
+			
+			document.getElementById("yellow1left").onclick=shangleft;
+			document.getElementById("yellow1right").onclick=shangright;
+			document.getElementById("yellow1up").onclick=backclockwise;
+			document.getElementById("yellow1down").onclick=backtanticlockwise;
+			
+			document.getElementById("yellow2left").onclick=shangleft;
+			document.getElementById("yellow2right").onclick=shangright;
+			document.getElementById("yellow2up").onclick=frontclockwise;
+			document.getElementById("yellow2down").onclick=frontanticlockwise;
+			
+			document.getElementById("yellow3left").onclick=xialeft;
+			document.getElementById("yellow3right").onclick=xiaright;
+			document.getElementById("yellow3up").onclick=backclockwise;
+			document.getElementById("yellow3down").onclick=backtanticlockwise;
+			
+			document.getElementById("yellow4left").onclick=xialeft;
+			document.getElementById("yellow4right").onclick=xiaright;
+			document.getElementById("yellow4up").onclick=frontclockwise;
+			document.getElementById("yellow4down").onclick=frontanticlockwise;
+			
+			document.getElementById("blue1left").onclick=shangleft;
+			document.getElementById("blue1right").onclick=shangright;
+			document.getElementById("blue1up").onclick=leftshang;
+			document.getElementById("blue1down").onclick=leftxia;
+			
+			document.getElementById("blue2left").onclick=shangleft;
+			document.getElementById("blue2right").onclick=shangright;
+			document.getElementById("blue2up").onclick=rightshang;
+			document.getElementById("blue2down").onclick=rightxia;
+			
+			document.getElementById("blue3left").onclick=xialeft;
+			document.getElementById("blue3right").onclick=xiaright;
+			document.getElementById("blue3up").onclick=leftshang;
+			document.getElementById("blue3down").onclick=leftxia;
+			
+			document.getElementById("blue4left").onclick=xialeft;
+			document.getElementById("blue4right").onclick=xiaright;
+			document.getElementById("blue4up").onclick=rightshang;
+			document.getElementById("blue4down").onclick=rightxia;
+			
+			document.getElementById("orange1left").onclick=shangleft;
+			document.getElementById("orange1right").onclick=shangright;
+			document.getElementById("orange1up").onclick=frontanticlockwise;
+			document.getElementById("orange1down").onclick=frontclockwise;
+			
+			document.getElementById("orange2left").onclick=xialeft;
+			document.getElementById("orange2right").onclick=xiaright;
+			document.getElementById("orange2up").onclick=frontanticlockwise;
+			document.getElementById("orange2down").onclick=frontclockwise;
+			
+			document.getElementById("orange3left").onclick=shangleft;
+			document.getElementById("orange3right").onclick=shangright;
+			document.getElementById("orange3up").onclick=backtanticlockwise;
+			document.getElementById("orange3down").onclick=backclockwise;
+			
+			document.getElementById("orange4left").onclick=xialeft;
+			document.getElementById("orange4right").onclick=xiaright;
+			document.getElementById("orange4up").onclick=backtanticlockwise;
+			document.getElementById("orange4down").onclick=backclockwise;
+			
+			document.getElementById("green1left").onclick=shangleft;
+			document.getElementById("green1right").onclick=shangright;
+			document.getElementById("green1up").onclick=rightxia;
+			document.getElementById("green1down").onclick=rightshang;
+			
+			document.getElementById("green2left").onclick=xialeft;
+			document.getElementById("green2right").onclick=xiaright;
+			document.getElementById("green2up").onclick=rightxia;
+			document.getElementById("green2down").onclick=rightshang;
+			
+			document.getElementById("green3left").onclick=shangleft;
+			document.getElementById("green3right").onclick=shangright;
+			document.getElementById("green3up").onclick=leftxia;
+			document.getElementById("green3down").onclick=leftshang;
+			
+			document.getElementById("green4left").onclick=xialeft;
+			document.getElementById("green4right").onclick=xiaright;
+			document.getElementById("green4up").onclick=leftxia;
+			document.getElementById("green4down").onclick=leftshang;
+			
+			document.getElementById("red1left").onclick=backtanticlockwise;
+			document.getElementById("red1right").onclick=backclockwise;
+			document.getElementById("red1up").onclick=leftshang;
+			document.getElementById("red1down").onclick=leftxia;
+			
+			document.getElementById("red2left").onclick=frontanticlockwise;
+			document.getElementById("red2right").onclick=frontclockwise;
+			document.getElementById("red2up").onclick=leftshang;
+			document.getElementById("red2down").onclick=leftxia;
+			
+			document.getElementById("red3left").onclick=backtanticlockwise;
+			document.getElementById("red3right").onclick=backclockwise;
+			document.getElementById("red3up").onclick=rightshang;
+			document.getElementById("red3down").onclick=rightxia;
+			
+			document.getElementById("red4left").onclick=frontanticlockwise;
+			document.getElementById("red4right").onclick=frontclockwise;
+			document.getElementById("red4up").onclick=rightshang;
+			document.getElementById("red4down").onclick=rightxia;
+			
+			document.getElementById("gray1left").onclick=frontclockwise;
+			document.getElementById("gray1right").onclick=frontanticlockwise;
+			document.getElementById("gray1up").onclick=leftshang;
+			document.getElementById("gray1down").onclick=leftxia;
+			
+			document.getElementById("gray2left").onclick=backclockwise;
+			document.getElementById("gray2right").onclick=backtanticlockwise;
+			document.getElementById("gray2up").onclick=leftshang;
+			document.getElementById("gray2down").onclick=leftxia;
+			
+			document.getElementById("gray3left").onclick=frontclockwise;
+			document.getElementById("gray3right").onclick=frontanticlockwise;
+			document.getElementById("gray3up").onclick=rightshang;
+			document.getElementById("gray3down").onclick=rightxia;
+			
+			document.getElementById("gray4left").onclick=backclockwise;
+			document.getElementById("gray4right").onclick=backtanticlockwise;
+			document.getElementById("gray4up").onclick=rightshang;
+			document.getElementById("gray4down").onclick=rightxia;
+			
+			document.getElementById("yellow1").onclick=show;
+			document.getElementById("yellow2").onclick=show;
+			document.getElementById("yellow3").onclick=show;
+			document.getElementById("yellow4").onclick=show;
+			document.getElementById("blue1").onclick=show;
+			document.getElementById("blue2").onclick=show;
+			document.getElementById("blue3").onclick=show;
+			document.getElementById("blue4").onclick=show;
+			document.getElementById("orange1").onclick=show;
+			document.getElementById("orange2").onclick=show;
+			document.getElementById("orange3").onclick=show;
+			document.getElementById("orange4").onclick=show;
+			document.getElementById("green1").onclick=show;
+			document.getElementById("green2").onclick=show;
+			document.getElementById("green3").onclick=show;
+			document.getElementById("green4").onclick=show;
+			document.getElementById("red1").onclick=show;
+			document.getElementById("red2").onclick=show;
+			document.getElementById("red3").onclick=show;
+			document.getElementById("red4").onclick=show;
+			document.getElementById("gray1").onclick=show;
+			document.getElementById("gray2").onclick=show;
+			document.getElementById("gray3").onclick=show;
+			document.getElementById("gray4").onclick=show;
+			
+			
+			//注册表单提交函数
+			document.getElementById("submit").onclick=callAjax;
+			document.getElementById("subss").onclick=regcallAjax;
+			onloadcallAjax();
+			//document.getElementById("yellow1").onclick=over;
+			//document.getElementById("yellow1").onmouseout=out;
+		}	
+		
+		
+		function getXMLHttpRequest(){
+			try{
+				try{
+					return new ActiveXObject("Microsoft.XMLHTTP");
+				}
+				catch(e){
+					return new ActiveXObject("Msxml2.XMLHTTP");
+				}
+			}
+			catch(e){
+				return new XMLHttpRequest();
+			}
+		}
+		var myRequest = getXMLHttpRequest();
+		
+		function regcallAjax(){
+			var url = "/Cube1.2/abc"+"?rand="+new Date().getTime();			
+			var registerusername = document.getElementById("registerusername").value;
+			var registerpassword = document.getElementById("registerpassword").value;
+			var Repeatregisterpassword = document.getElementById("Repeatregisterpassword").value;
+			myRequest.open("POST",url,true);
+			myRequest.setRequestHeader("Content-Type","application/x-www-form-urlencoded;charset=UTF-8");
+			var content = "registerusername="+registerusername+"&registerpassword="+registerpassword+"&Repeatregisterpassword="+Repeatregisterpassword+"&id=2";			
+			myRequest.send(content);
+			myRequest.onreadystatechange = responseAjax;
+			hidelogin();
+		}
+		
+		function onloadcallAjax(){
+			var url = "/Cube1.2/abc"+"?rand="+new Date().getTime();					
+			myRequest.open("POST",url,true);
+			myRequest.setRequestHeader("Content-Type","application/x-www-form-urlencoded;charset=UTF-8");
+			var content = "id=0";			
+			myRequest.send(content);
+			myRequest.onreadystatechange = responseAjax;
+		}
+		
+		function callAjax(){
+			
+			var url = "/Cube1.2/abc"+"?rand="+new Date().getTime();
+			
+			var username = document.getElementById("usename").value;
+			var password = document.getElementById("password").value;		
+			myRequest.open("POST",url,true);
+			myRequest.setRequestHeader("Content-Type","application/x-www-form-urlencoded;charset=UTF-8");
+			var content = "username="+username+"&password="+password+"&id=1";			
+			myRequest.send(content);
+			myRequest.onreadystatechange = responseAjax;
+			hidediv();	
+		}
+		function responseAjax(){
+			if(myRequest.readyState == 4){
+				if(myRequest.status == 200){					
+					var resp = myRequest.responseText;		
+					
+					if(resp == "0"){
+						document.getElementById("myname").innerHTML="";
+						document.getElementById("myscroce").innerHTML="";
+					}else if(resp == "2"){
+						alert("账号不存在！");
+						document.getElementById("myname").innerHTML="";
+						document.getElementById("myscroce").innerHTML="";
+					}else if(resp == "3"){
+						alert("密码错误！");
+						document.getElementById("myname").innerHTML="";
+						document.getElementById("myscroce").innerHTML="";
+					}else if(resp == "5"){
+						alert("账号不能为空！");
+						document.getElementById("myname").innerHTML="";
+						document.getElementById("myscroce").innerHTML="";
+					}else if(resp == "6"){
+						alert("账号已被注册！");
+						document.getElementById("myname").innerHTML="";
+						document.getElementById("myscroce").innerHTML="";
+					}else if(resp == "7"){
+						alert("密码不能为空！");
+						document.getElementById("myname").innerHTML="";
+						document.getElementById("myscroce").innerHTML="";
+					}else if(resp == "8"){
+						alert("密码不一致！");
+						document.getElementById("myname").innerHTML="";
+						document.getElementById("myscroce").innerHTML="";
+					}else{
+						var my = JSON.parse(resp);
+						var name = my.username;
+						var scroce = my.sroce;	
+						var judge = my.jduge;
+						document.getElementById("myname").innerHTML="欢迎，"+name+"!";
+						document.getElementById("myscroce").innerHTML="最快纪录："+scroce;	
+						document.getElementById("denglv").style.display='none';
+						document.getElementById("zhuce").style.display='none';
+					}													
+									
+				}else{					
+					alert("An error has occurred:"+myRequest.statusText);
+				}
+			}
+		}
+	
+	</script>		
+	<style>		
+			body{
+				margin:0px;		
+				padding:0px;
+				font:12pt Verdana,Aprial,Georgia,sans-serif;
+			}
+			#nav{	
+				width:100%;
+				background-color:#3333FF;
+				padding:0px 0px 0px 24px;
+				background-position:0px 0px ;				
+				float:left;
+				
+			}
+			#nav ul{			
+				list-type:none;
+				margin:0px 0px 0px 0px;
+				padding:8px;
+			}
+			#nav li{		
+				border-left:opx;
+				border-bottom:0px solid #ffffff;			
+				padding:8px 8px 3px 3px;
+				color:#ffffff;
+				display:inline;
+			}
+			#font{
+				font-family:"楷体";
+				font-weight:bold;
+				font-size:24px;
+			}
+			#myname{
+							
+			}
+			#bg{ 
+	        	display: none;  
+	        	position: absolute;  
+	        	top: 0%;  
+	        	left: 0%;  
+	        	width: 100%;  
+	        	height: 100%;  
+	        	background-color: #E0E0E0;  
+	        	z-index:1001;  
+	        	-moz-opacity: 0.5;
+	        	opacity:.50; 
+	        	filter: alpha(opacity=50);
+	        	}  
+	        #show{
+	        	top:25%;
+	        	left:35%;
+	        	display: none;  
+	        	position: absolute;  	        	  
+	        	width: 250px;  
+	        	height:150px;  
+	        	padding: 0px;  
+	        	border: 1px solid #D0D0D0;  
+	        	background-color: white;  
+	        	z-index:1002;  
+	        	overflow: auto;
+	        	} 	
+	       	#close{	 
+	       		color:#D0D0D0;
+	       		margin:0;
+	       		position:absolute;
+	       		padding:0;
+	       		top:0;
+	       		right:6px;      		
+				font:20pt Verdana,Aprial,Georgia,sans-serif;
+			}	
+			#loginForm{				
+				padding:10px;
+				position:absolute;
+			}	
+			#registerForm{				
+				padding:10px 12px;
+				position:absolute;
+			}
+			 
+			#register{
+				top:25%;
+	        	left:35%;
+	        	display: none;  
+	        	position: absolute;  	        	  
+	        	width: 280px;  
+	        	height:150px;  
+	        	padding: 0px;  
+	        	border: 1px solid #D0D0D0;  
+	        	background-color: white;  
+	        	z-index:1002;  
+	        	overflow: auto;
+			}
+			#message{				
+				position:absolute;
+				top:50px;
+				left:1000px;
+				
+			}
+			#iframe{
+				text-align:left;
+				width:300px;
+				height:500px;
+				border:1px solid #D0D0D0;
+				background-color:#FFFFFF"
+			}
+			#yellow1{
+				position:absolute;
+				border:1px solid black;
+				width:50px;
+				height:50px;
+				left:200px;
+				top:250px;
+				background-color:yellow;
+			}
+			#yellow1manager{
+				display:none;
+			}
+			#yellow1left{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:-40px;				
+			}
+			#yellow1up{	
+				z-index:10;
+				position:absolute;
+				top:-40px;						
+				left:0px;				
+			}
+			#yellow1down{	
+				z-index:10;
+				position:absolute;
+				top:60px;						
+				left:0px;				
+			}
+			#yellow1right{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:60px;				
+			}
+			#yellow3{
+				position:absolute;
+				border:1px solid black;
+				width:50px;
+				height:50px;
+				left:200px;
+				top:300px;
+				background-color:yellow;
+			}
+			#yellow3manager{
+				display:none;
+			}
+			#yellow3left{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:-40px;				
+			}
+			#yellow3up{	
+				z-index:10;
+				position:absolute;
+				top:-40px;						
+				left:0px;				
+			}
+			#yellow3down{	
+				z-index:10;
+				position:absolute;
+				top:60px;						
+				left:0px;				
+			}
+			#yellow3right{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:60px;				
+			}
+			#yellow4{
+				position:absolute;
+				border:1px solid black;
+				width:50px;
+				height:50px;
+				left:250px;
+				top:300px;
+				background-color:yellow;
+			}
+			#yellow4manager{
+				display:none;
+			}
+			#yellow4left{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:-40px;				
+			}
+			#yellow4up{	
+				z-index:10;
+				position:absolute;
+				top:-40px;						
+				left:0px;				
+			}
+			#yellow4down{	
+				z-index:10;
+				position:absolute;
+				top:60px;						
+				left:0px;				
+			}
+			#yellow4right{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:60px;				
+			}
+			#yellow2{
+				position:absolute;
+				border:1px solid black;
+				width:50px;
+				height:50px;
+				left:250px;
+				top:250px;
+				background-color:yellow;
+			}
+			#yellow2manager{
+				display:none;
+			}
+			#yellow2left{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:-40px;				
+			}
+			#yellow2up{	
+				z-index:10;
+				position:absolute;
+				top:-40px;						
+				left:0px;				
+			}
+			#yellow2down{	
+				z-index:20;
+				position:absolute;
+				top:60px;						
+				left:0px;				
+			}
+			#yellow2right{	
+				z-index:20;
+				position:absolute;
+				top:0px;						
+				left:60px;				
+			}
+			#blue1{
+				position:absolute;
+				border:1px solid black;
+				width:50px;
+				height:50px;
+				left:320px;
+				top:250px;
+				background-color:blue;
+			}
+			#blue1manager{
+				display:none;
+			}
+			#blue1left{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:-40px;				
+			}
+			#blue1up{	
+				z-index:10;
+				position:absolute;
+				top:-40px;						
+				left:0px;				
+			}
+			#blue1down{	
+				z-index:20;
+				position:absolute;
+				top:60px;						
+				left:0px;				
+			}
+			#blue1right{	
+				z-index:20;
+				position:absolute;
+				top:0px;						
+				left:60px;				
+			}
+			#blue2{
+				position:absolute;
+				border:1px solid black;
+				width:50px;
+				height:50px;
+				left:370px;
+				top:250px;
+				background-color:blue;
+			}
+			#blue2manager{
+				display:none;
+			}
+			#blue2left{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:-40px;				
+			}
+			#blue2up{	
+				z-index:10;
+				position:absolute;
+				top:-40px;						
+				left:0px;				
+			}
+			#blue2down{	
+				z-index:20;
+				position:absolute;
+				top:60px;						
+				left:0px;				
+			}
+			#blue2right{	
+				z-index:20;
+				position:absolute;
+				top:0px;						
+				left:60px;				
+			}
+			#blue3{
+				position:absolute;
+				border:1px solid black;
+				width:50px;
+				height:50px;
+				left:320px;
+				top:300px;
+				background-color:blue;
+			}
+			#blue3manager{
+				display:none;
+			}
+			#blue3left{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:-40px;				
+			}
+			#blue3up{	
+				z-index:10;
+				position:absolute;
+				top:-40px;						
+				left:0px;				
+			}
+			#blue3down{	
+				z-index:20;
+				position:absolute;
+				top:60px;						
+				left:0px;				
+			}
+			#blue3right{	
+				z-index:20;
+				position:absolute;
+				top:0px;						
+				left:60px;				
+			}
+			#blue4{
+				position:absolute;
+				border:1px solid black;
+				width:50px;
+				height:50px;
+				left:370px;
+				top:300px;
+				background-color:blue;
+			}
+			#blue4manager{
+				display:none;
+			}
+			#blue4left{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:-40px;				
+			}
+			#blue4up{	
+				z-index:10;
+				position:absolute;
+				top:-40px;						
+				left:0px;				
+			}
+			#blue4down{	
+				z-index:20;
+				position:absolute;
+				top:60px;						
+				left:0px;				
+			}
+			#blue4right{	
+				z-index:20;
+				position:absolute;
+				top:0px;						
+				left:60px;				
+			}
+			#orange1{
+				position:absolute;
+				border:1px solid black;
+				width:50px;
+				height:50px;
+				left:440px;
+				top:250px;
+				background-color:orange;
+			}
+			#orange1manager{
+				display:none;
+			}
+			#orange1left{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:-40px;				
+			}
+			#orange1up{	
+				z-index:10;
+				position:absolute;
+				top:-40px;						
+				left:0px;				
+			}
+			#orange1down{	
+				z-index:20;
+				position:absolute;
+				top:60px;						
+				left:0px;				
+			}
+			#orange1right{	
+				z-index:20;
+				position:absolute;
+				top:0px;						
+				left:60px;				
+			}
+			#orange2{
+				position:absolute;
+				border:1px solid black;
+				width:50px;
+				height:50px;
+				left:440px;
+				top:300px;
+				background-color:orange;
+			}
+			#orange2manager{
+				display:none;
+			}
+			#orange2left{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:-40px;				
+			}
+			#orange2up{	
+				z-index:10;
+				position:absolute;
+				top:-40px;						
+				left:0px;				
+			}
+			#orange2down{	
+				z-index:10;
+				position:absolute;
+				top:60px;						
+				left:0px;				
+			}
+			#orange2right{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:60px;				
+			}
+			#orange3{
+				position:absolute;
+				border:1px solid black;
+				width:50px;
+				height:50px;
+				left:490px;
+				top:250px;
+				background-color:orange;
+			}
+			#orange3manager{
+				display:none;
+			}
+			#orange3left{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:-40px;				
+			}
+			#orange3up{	
+				z-index:10;
+				position:absolute;
+				top:-40px;						
+				left:0px;				
+			}
+			#orange3down{	
+				z-index:10;
+				position:absolute;
+				top:60px;						
+				left:0px;				
+			}
+			#orange3right{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:60px;				
+			}
+			#orange4{
+				position:absolute;
+				border:1px solid black;
+				width:50px;
+				height:50px;
+				left:490px;
+				top:300px;
+				background-color:orange;
+			}
+			#orange4manager{
+				display:none;
+			}
+			#orange4left{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:-40px;				
+			}
+			#orange4up{	
+				z-index:10;
+				position:absolute;
+				top:-40px;						
+				left:0px;				
+			}
+			#orange4down{	
+				z-index:10;
+				position:absolute;
+				top:60px;						
+				left:0px;				
+			}
+			#orange4right{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:60px;				
+			}
+			#green1{
+				position:absolute;
+				border:1px solid black;
+				width:50px;
+				height:50px;
+				left:560px;
+				top:250px;
+				background-color:green;
+			}
+			#green1manager{
+				display:none;
+			}
+			#green1left{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:-40px;				
+			}
+			#green1up{	
+				z-index:10;
+				position:absolute;
+				top:-40px;						
+				left:0px;				
+			}
+			#green1down{	
+				z-index:10;
+				position:absolute;
+				top:60px;						
+				left:0px;				
+			}
+			#green1right{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:60px;				
+			}
+			#green2{
+				position:absolute;
+				border:1px solid black;
+				width:50px;
+				height:50px;
+				left:560px;
+				top:300px;
+				background-color:green;
+			}
+			#green2manager{
+				display:none;
+			}
+			#green2left{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:-40px;				
+			}
+			#green2up{	
+				z-index:10;
+				position:absolute;
+				top:-40px;						
+				left:0px;				
+			}
+			#green2down{	
+				z-index:10;
+				position:absolute;
+				top:60px;						
+				left:0px;				
+			}
+			#green2right{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:60px;				
+			}
+			#green3{
+				position:absolute;
+				border:1px solid black;
+				width:50px;
+				height:50px;
+				left:610px;
+				top:250px;
+				background-color:green;
+			}
+			#green3manager{
+				display:none;
+			}
+			#green3left{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:-40px;				
+			}
+			#green3up{	
+				z-index:10;
+				position:absolute;
+				top:-40px;						
+				left:0px;				
+			}
+			#green3down{	
+				z-index:10;
+				position:absolute;
+				top:60px;						
+				left:0px;				
+			}
+			#green3right{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:60px;				
+			}
+			#green4{
+				position:absolute;
+				border:1px solid black;
+				width:50px;
+				height:50px;
+				left:610px;
+				top:300px;
+				background-color:green;
+			}
+			#green4manager{
+				display:none;
+			}
+			#green4left{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:-40px;				
+			}
+			#green4up{	
+				z-index:10;
+				position:absolute;
+				top:-40px;						
+				left:0px;				
+			}
+			#green4down{	
+				z-index:10;
+				position:absolute;
+				top:60px;						
+				left:0px;				
+			}
+			#green4right{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:60px;				
+			}
+			#red1{
+				position:absolute;
+				border:1px solid black;
+				width:50px;
+				height:50px;
+				left:320px;
+				top:130px;
+				background-color:red;
+			}
+			#red1manager{
+				display:none;
+			}
+			#red1left{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:-40px;				
+			}
+			#red1up{	
+				z-index:10;
+				position:absolute;
+				top:-40px;						
+				left:0px;				
+			}
+			#red1down{	
+				z-index:10;
+				position:absolute;
+				top:60px;						
+				left:0px;				
+			}
+			#red1right{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:60px;				
+			}
+			#red2{
+				position:absolute;
+				border:1px solid black;
+				width:50px;
+				height:50px;
+				left:320px;
+				top:180px;
+				background-color:red;
+			}
+			#red2manager{
+				display:none;
+			}
+			#red2left{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:-40px;				
+			}
+			#red2up{	
+				z-index:10;
+				position:absolute;
+				top:-40px;						
+				left:0px;				
+			}
+			#red2down{	
+				z-index:10;
+				position:absolute;
+				top:60px;						
+				left:0px;				
+			}
+			#red2right{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:60px;				
+			}
+			#red3{
+				position:absolute;
+				border:1px solid black;
+				width:50px;
+				height:50px;
+				left:370px;
+				top:130px;
+				background-color:red;
+			}
+			#red3manager{
+				display:none;
+			}
+			#red3left{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:-40px;				
+			}
+			#red3up{	
+				z-index:10;
+				position:absolute;
+				top:-40px;						
+				left:0px;				
+			}
+			#red3down{	
+				z-index:10;
+				position:absolute;
+				top:60px;						
+				left:0px;				
+			}
+			#red3right{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:60px;				
+			}
+			#red4{
+				position:absolute;
+				border:1px solid black;
+				width:50px;
+				height:50px;
+				left:370px;
+				top:180px;
+				background-color:red;
+			}
+			#red4manager{
+				display:none;
+			}
+			#red4left{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:-40px;				
+			}
+			#red4up{	
+				z-index:10;
+				position:absolute;
+				top:-40px;						
+				left:0px;				
+			}
+			#red4down{	
+				z-index:10;
+				position:absolute;
+				top:60px;						
+				left:0px;				
+			}
+			#red4right{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:60px;				
+			}
+			#gray1{
+				position:absolute;
+				border:1px solid black;
+				width:50px;
+				height:50px;
+				left:320px;
+				top:370px;
+				background-color:gray;
+			}
+			#gray1manager{
+				display:none;
+			}
+			#gray1left{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:-40px;				
+			}
+			#gray1up{	
+				z-index:10;
+				position:absolute;
+				top:-40px;						
+				left:0px;				
+			}
+			#gray1down{	
+				z-index:10;
+				position:absolute;
+				top:60px;						
+				left:0px;				
+			}
+			#gray1right{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:60px;				
+			}
+			#gray2{
+				position:absolute;
+				border:1px solid black;
+				width:50px;
+				height:50px;
+				left:320px;
+				top:420px;
+				background-color:gray;
+			}
+			#gray2manager{
+				display:none;
+			}
+			#gray2left{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:-40px;				
+			}
+			#gray2up{	
+				z-index:10;
+				position:absolute;
+				top:-40px;						
+				left:0px;				
+			}
+			#gray2down{	
+				z-index:10;
+				position:absolute;
+				top:60px;						
+				left:0px;				
+			}
+			#gray2right{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:60px;				
+			}
+			#gray3{
+				position:absolute;
+				border:1px solid black;
+				width:50px;
+				height:50px;
+				left:370px;
+				top:370px;
+				background-color:gray;
+			}
+			#gray3manager{
+				display:none;
+			}
+			#gray3left{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:-40px;				
+			}
+			#gray3up{	
+				z-index:10;
+				position:absolute;
+				top:-40px;						
+				left:0px;				
+			}
+			#gray3down{	
+				z-index:10;
+				position:absolute;
+				top:60px;						
+				left:0px;				
+			}
+			#gray3right{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:60px;				
+			}
+			#gray4{
+				position:absolute;
+				border:1px solid black;
+				width:50px;
+				height:50px;
+				left:370px;
+				top:420px;
+				background-color:gray;
+			}
+			#gray4manager{
+				display:none;
+			}
+			#gray4left{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:-40px;				
+			}
+			#gray4up{	
+				z-index:10;
+				position:absolute;
+				top:-40px;						
+				left:0px;				
+			}
+			#gray4down{	
+				z-index:10;
+				position:absolute;
+				top:60px;						
+				left:0px;				
+			}
+			#gray4right{	
+				z-index:10;
+				position:absolute;
+				top:0px;						
+				left:60px;				
+			}
+	</style>  
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>cube</title>
+</head>
+<body>
+	<div id="nav">
+		<ul>
+			<li id=font>二阶魔方</li>
+			<li id="denglv" onclick="showdiv();">登陆</li>
+			<li id="zhuce" onclick="showregister()">注册</li>	
+			<li id="myname"></li>
+			<li id="myscroce"></li>					
+		</ul>
+	</div>	
+	<div id="bg"></div>
+	<div id="register">
+		<p id="close" onclick="hidelogin();">×</p>
+		<br>
+		<form id="registerForm" name="registerForm">
+			<table>
+				<tr>
+					<td><div align="right">账&nbsp&nbsp&nbsp&nbsp&nbsp号:</div></td>
+					<td><input id="registerusername" type="text" name="registerusername"></td>					
+				</tr>
+				<tr>
+					<td><div align="right">密&nbsp&nbsp&nbsp&nbsp&nbsp码:</div></td>
+					<td><input id="registerpassword" type="password" name="registerpassword"></td>					
+				</tr>
+				<tr>
+					<td><div align="right">再次输入:</div></td>
+					<td><input id="Repeatregisterpassword"  type="password" name="Repeatregisterpassword"></td>					
+				</tr>
+				<tr>
+					<td><input id="subss" type="submit" name="submit" value="提交" id="sub"></td>
+					<td style="text-align:right;"><input type="reset" name="reset" value="重置"></td>					
+				</tr>
+			</table>
+		</form>
+	</div>  
+	<div id="show">
+		<p id="close" onclick="hidediv();">×</p>
+		<br>
+		<form id="loginForm" name="loginForm" method="POST">
+			<table>
+				<tr>
+					<td><div align="right">账号:</div></td>
+					<td><input id = "usename"  type="text" name="username"></td>					
+				<tr>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><div align="right">密码:</div></td>
+					<td><input id = "password" type="password" name="password"></td>
+				</tr>
+				<tr>
+					<td><input id="submit" type="submit" name="submit" value="提交"></td>
+					<td style="text-align:right;"><input type="reset" name="reset" value="重置"></td>					
+				</tr>
+			</table>
+		</form>		 
+	</div>
+	<div id="yellow1">1
+		<div id="yellow1manager">
+			<div id="yellow1up"><img width=50px; src='picture/arrowup.jpg'></div>
+			<div id="yellow1down"><img width=50px; src='picture/arrowdown.jpg'></div>
+			<div id="yellow1left"><img height=50px; src='picture/arrowleft.jpg'></div>
+			<div id="yellow1right"><img height=50px; src='picture/arrowright.jpg'></div>
+		</div>
+	</div>		
+	<div id="yellow2">2
+		<div id="yellow2manager">
+			<div id="yellow2up"><img width=50px; src='picture/arrowup.jpg'></div>
+			<div id="yellow2down"><img width=50px; src='picture/arrowdown.jpg'></div>
+			<div id="yellow2left"><img height=50px; src='picture/arrowleft.jpg'></div>
+			<div id="yellow2right"><img height=50px; src='picture/arrowright.jpg'></div>
+		</div>
+	</div>
+	<div id="yellow3">3
+		<div id="yellow3manager">
+			<div id="yellow3up"><img width=50px; src='picture/arrowup.jpg'></div>
+			<div id="yellow3down"><img width=50px; src='picture/arrowdown.jpg'></div>
+			<div id="yellow3left"><img height=50px; src='picture/arrowleft.jpg'></div>
+			<div id="yellow3right"><img height=50px; src='picture/arrowright.jpg'></div>
+		</div>
+	</div>
+	<div id="yellow4">4
+		<div id="yellow4manager">
+			<div id="yellow4up"><img width=50px; src='picture/arrowup.jpg'></div>
+			<div id="yellow4down"><img width=50px; src='picture/arrowdown.jpg'></div>
+			<div id="yellow4left"><img height=50px; src='picture/arrowleft.jpg'></div>
+			<div id="yellow4right"><img height=50px; src='picture/arrowright.jpg'></div>
+		</div>
+	</div>
+	<div id="blue1">1
+		<div id="blue1manager">
+			<div id="blue1up"><img width=50px; src='picture/arrowup.jpg'></div>
+			<div id="blue1down"><img width=50px; src='picture/arrowdown.jpg'></div>
+			<div id="blue1left"><img height=50px; src='picture/arrowleft.jpg'></div>
+			<div id="blue1right"><img height=50px; src='picture/arrowright.jpg'></div>
+		</div>
+	</div>
+	<div id="blue2">2
+		<div id="blue2manager">
+			<div id="blue2up"><img width=50px; src='picture/arrowup.jpg'></div>
+			<div id="blue2down"><img width=50px; src='picture/arrowdown.jpg'></div>
+			<div id="blue2left"><img height=50px; src='picture/arrowleft.jpg'></div>
+			<div id="blue2right"><img height=50px; src='picture/arrowright.jpg'></div>
+		</div>
+	</div>
+	<div id="blue3">3
+		<div id="blue3manager">
+			<div id="blue3up"><img width=50px; src='picture/arrowup.jpg'></div>
+			<div id="blue3down"><img width=50px; src='picture/arrowdown.jpg'></div>
+			<div id="blue3left"><img height=50px; src='picture/arrowleft.jpg'></div>
+			<div id="blue3right"><img height=50px; src='picture/arrowright.jpg'></div>
+		</div>
+	</div>
+	<div id="blue4">4
+		<div id="blue4manager">
+			<div id="blue4up"><img width=50px; src='picture/arrowup.jpg'></div>
+			<div id="blue4down"><img width=50px; src='picture/arrowdown.jpg'></div>
+			<div id="blue4left"><img height=50px; src='picture/arrowleft.jpg'></div>
+			<div id="blue4right"><img height=50px; src='picture/arrowright.jpg'></div>
+		</div>
+	</div>
+	<div id="orange1">1
+		<div id="orange1manager">
+			<div id="orange1up"><img width=50px; src='picture/arrowup.jpg'></div>
+			<div id="orange1down"><img width=50px; src='picture/arrowdown.jpg'></div>
+			<div id="orange1left"><img height=50px; src='picture/arrowleft.jpg'></div>
+			<div id="orange1right"><img height=50px; src='picture/arrowright.jpg'></div>
+		</div>
+	</div>
+	<div id="orange2">2
+		<div id="orange2manager">
+			<div id="orange2up"><img width=50px; src='picture/arrowup.jpg'></div>
+			<div id="orange2down"><img width=50px; src='picture/arrowdown.jpg'></div>
+			<div id="orange2left"><img height=50px; src='picture/arrowleft.jpg'></div>
+			<div id="orange2right"><img height=50px; src='picture/arrowright.jpg'></div>
+		</div>
+	</div>
+	<div id="orange3">3
+		<div id="orange3manager">
+			<div id="orange3up"><img width=50px; src='picture/arrowup.jpg'></div>
+			<div id="orange3down"><img width=50px; src='picture/arrowdown.jpg'></div>
+			<div id="orange3left"><img height=50px; src='picture/arrowleft.jpg'></div>
+			<div id="orange3right"><img height=50px; src='picture/arrowright.jpg'></div>
+		</div>
+	</div>
+	<div id="orange4">4
+		<div id="orange4manager">
+			<div id="orange4up"><img width=50px; src='picture/arrowup.jpg'></div>
+			<div id="orange4down"><img width=50px; src='picture/arrowdown.jpg'></div>
+			<div id="orange4left"><img height=50px; src='picture/arrowleft.jpg'></div>
+			<div id="orange4right"><img height=50px; src='picture/arrowright.jpg'></div>
+		</div>
+	</div>
+	<div id="green1">1
+		<div id="green1manager">
+			<div id="green1up"><img width=50px; src='picture/arrowup.jpg'></div>
+			<div id="green1down"><img width=50px; src='picture/arrowdown.jpg'></div>
+			<div id="green1left"><img height=50px; src='picture/arrowleft.jpg'></div>
+			<div id="green1right"><img height=50px; src='picture/arrowright.jpg'></div>
+		</div>
+	</div>
+	<div id="green2">2
+		<div id="green2manager">
+			<div id="green2up"><img width=50px; src='picture/arrowup.jpg'></div>
+			<div id="green2down"><img width=50px; src='picture/arrowdown.jpg'></div>
+			<div id="green2left"><img height=50px; src='picture/arrowleft.jpg'></div>
+			<div id="green2right"><img height=50px; src='picture/arrowright.jpg'></div>
+		</div>
+	</div>
+	<div id="green3">3
+		<div id="green3manager">
+			<div id="green3up"><img width=50px; src='picture/arrowup.jpg'></div>
+			<div id="green3down"><img width=50px; src='picture/arrowdown.jpg'></div>
+			<div id="green3left"><img height=50px; src='picture/arrowleft.jpg'></div>
+			<div id="green3right"><img height=50px; src='picture/arrowright.jpg'></div>
+		</div>
+	</div>
+	<div id="green4">4
+		<div id="green4manager">
+			<div id="green4up"><img width=50px; src='picture/arrowup.jpg'></div>
+			<div id="green4down"><img width=50px; src='picture/arrowdown.jpg'></div>
+			<div id="green4left"><img height=50px; src='picture/arrowleft.jpg'></div>
+			<div id="green4right"><img height=50px; src='picture/arrowright.jpg'></div>
+		</div>
+	</div>
+	<div id="red1">1
+		<div id="red1manager">
+			<div id="red1up"><img width=50px; src='picture/arrowup.jpg'></div>
+			<div id="red1down"><img width=50px; src='picture/arrowdown.jpg'></div>
+			<div id="red1left"><img height=50px; src='picture/arrowleft.jpg'></div>
+			<div id="red1right"><img height=50px; src='picture/arrowright.jpg'></div>
+		</div>
+	</div>
+	<div id="red2">2
+		<div id="red2manager">
+			<div id="red2up"><img width=50px; src='picture/arrowup.jpg'></div>
+			<div id="red2down"><img width=50px; src='picture/arrowdown.jpg'></div>
+			<div id="red2left"><img height=50px; src='picture/arrowleft.jpg'></div>
+			<div id="red2right"><img height=50px; src='picture/arrowright.jpg'></div>
+		</div>
+	</div>
+	<div id="red3">3
+		<div id="red3manager">
+			<div id="red3up"><img width=50px; src='picture/arrowup.jpg'></div>
+			<div id="red3down"><img width=50px; src='picture/arrowdown.jpg'></div>
+			<div id="red3left"><img height=50px; src='picture/arrowleft.jpg'></div>
+			<div id="red3right"><img height=50px; src='picture/arrowright.jpg'></div>
+		</div>
+	</div>
+	<div id="red4">4
+		<div id="red4manager">
+			<div id="red4up"><img width=50px; src='picture/arrowup.jpg'></div>
+			<div id="red4down"><img width=50px; src='picture/arrowdown.jpg'></div>
+			<div id="red4left"><img height=50px; src='picture/arrowleft.jpg'></div>
+			<div id="red4right"><img height=50px; src='picture/arrowright.jpg'></div>
+		</div>
+	</div>
+	<div id="gray1">1
+		<div id="gray1manager">
+			<div id="gray1up"><img width=50px; src='picture/arrowup.jpg'></div>
+			<div id="gray1down"><img width=50px; src='picture/arrowdown.jpg'></div>
+			<div id="gray1left"><img height=50px; src='picture/arrowleft.jpg'></div>
+			<div id="gray1right"><img height=50px; src='picture/arrowright.jpg'></div>
+		</div>
+	</div>
+	<div id="gray2">2
+		<div id="gray2manager">
+			<div id="gray2up"><img width=50px; src='picture/arrowup.jpg'></div>
+			<div id="gray2down"><img width=50px; src='picture/arrowdown.jpg'></div>
+			<div id="gray2left"><img height=50px; src='picture/arrowleft.jpg'></div>
+			<div id="gray2right"><img height=50px; src='picture/arrowright.jpg'></div>
+		</div>
+	</div>
+	<div id="gray3">3
+		<div id="gray3manager">
+			<div id="gray3up"><img width=50px; src='picture/arrowup.jpg'></div>
+			<div id="gray3down"><img width=50px; src='picture/arrowdown.jpg'></div>
+			<div id="gray3left"><img height=50px; src='picture/arrowleft.jpg'></div>
+			<div id="gray3right"><img height=50px; src='picture/arrowright.jpg'></div>
+		</div>
+	</div>
+	<div id="gray4">4
+		<div id="gray4manager">
+			<div id="gray4up"><img width=50px; src='picture/arrowup.jpg'></div>
+			<div id="gray4down"><img width=50px; src='picture/arrowdown.jpg'></div>
+			<div id="gray4left"><img height=50px; src='picture/arrowleft.jpg'></div>
+			<div id="gray4right"><img height=50px; src='picture/arrowright.jpg'></div>
+		</div>
+	</div>
+	<div id="g"></div>
+	<br>
+	<input id="c" type="button" name="button" value="上左">
+	<input id="ll" type="button" name="button" value="上右"><br>
+	<input id="ttt" type="button" name="button" value="下左">
+	<input id="kkkk" type="button" name="button" value="下右"><br>
+	<input id="bb" type="button" name="button" value="左上">
+	<input id="fff" type="button" name="button" value="左下"><br>
+	<input id="hhh" type="button" name="button" value="右上">
+	<input id="mm" type="button" name="button" value="右下"><br>
+	<input id="aa" type="button" name="button" value="前顺时针"><br>
+	<input id="dd" type="button" name="button" value="前逆时针"><br>
+	<input id="jj" type="button" name="button" value="后顺时针"><br>
+	<input id="ii" type="button" name="button" value="后逆时针"><br> 
+	<input id="bottontime" type="button" name="button" value="计时"><br>
+	<div id="time"></div>
+	<div id="message">
+		<iframe id="iframe" src="try.html">
+			<p>Uh oh..your browser does not support iframes.</p>
+		</iframe> 
+	</div>	
+</body>
+</html>
